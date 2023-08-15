@@ -1,0 +1,249 @@
+.app-container {
+  font-family: Arial, sans-serif;
+}
+/*nav */
+.app-nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.app-logo {
+  font-family: serif;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 26px;
+}
+.app-items {
+  cursor: pointer;
+  font-size: 18px;
+}
+/* Menu */
+.app-menu {
+  background-color: #F5F5F5;
+  border-top: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.app-menu-item {
+  cursor: pointer;
+  margin: 5px 0;
+}
+/* Products List */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.product-card {
+  border-radius: 15px;
+  background-color: #4A4A4A;
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 15px;
+  width: calc(33.33% - 20px); /* Set the width to take up 33.33% of the available space with margins included */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+/* If you want to display three cards per row, you can use a media query */
+@media (min-width: 768px) {
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+.product-card img {
+  cursor: pointer;
+  max-width: 100%;
+}
+.product-card-buttons button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.product-card-buttons button:hover {
+  background-color: #4A4A4A;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-item-price {
+  font-weight: bold;
+}
+.card-item-cat {
+  color: #996A6A;
+  font-size: 14px;
+}
+/* Cart List */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.cart-item {
+  background-color: #F9F9F9;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+}
+.cart-item-name {
+  font-weight: bold;
+}
+.cart-item-price {
+  font-weight: bold;
+}
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+/* Details */
+.details-container {
+  padding: 20px;
+}
+.details-image {
+  max-width: 100%;
+}
+.details-content {
+  margin-top: 20px;
+}
+/* Product Details */
+/* Product Details */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F9F9F9;
+  overflow: hidden;
+}
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.product-info {
+  text-align: center;
+  padding: 20px;
+}
+.product-name {
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.product-description {
+  color: #666;
+  margin-bottom: 20px;
+  max-height: 4.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.search {
+  height: 21px;
+  width: 140px;
+  border-radius: 10px;
+  border: transparent;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 1px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+/* CartList.css */
+/* CartList.css */
+.cart-list {
+  background-color: #525252;
+  border-radius: 15px;
+  padding: 15px; /* Adjust padding to make it smaller */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 70%; /* Reduce the width to make it smaller */
+  max-width: 500px; /* Reduce the max-width for readability */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Reduce the min-height to make it smaller */
+}
+.cart-list h1 {
+  font-size: 24px;
+  margin-bottom: 90px;
+}
+.cart-items {
+  margin-bottom: 20px;
+}
+.cart-item {
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-item span {
+  font-size: 16px;
+}
+.cart-list-button {
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-list-button:hover {
+  background-color: #C0392B;
+}
+.cart-total {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.checkout-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 20%;
+}
+.checkout-button:hover {
+  background-color: #27AE60;
+}
+.svg-container {
+  display: inline-block; 
+}
+
+.svg-container svg path {
+  fill: rgb(253, 249, 226); 
+}
+
+
+.svg-container:hover svg path {
+  fill: #D4B170; /* Change the fill color to gold on hover */
+}

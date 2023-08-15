@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Mercedes-AMG G63 - Mansory P900",
+        "price": 1200000 ,
+        "description": "The Mercedes-AMG G63 Mansory P900 is a highly modified and customized version of the already powerful and distinctive Mercedes-AMG G63 SUV. Mansory.",
+        "category": "SUV",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-04/G63%20Sand%20Yellow%20Nr.841-12%20copy.jpg?itok=kQ1a-SbL"
+     },
+     {
+      "name": "Mercedes-AMG G63 MANSORY P820",
+      "price": 1100000 ,
+      "description": "The Mercedes-AMG G63 Mansory P820 is an exclusive, high-performance SUV with refined design and a powerful tuned engine.",
+      "category": "SUV",
+      "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-07/DSC07610.jpg?itok=cYm3M809"
+   },
+     {
+        "name": "Mercedes GLS Maybach - MANSORY P800",
+        "price": 1900000,
+        "description": "The Mercedes GLS Maybach Mansory P800 combines lavish Maybach luxury with Mansory's performance prowess, resulting in an exclusive SUV boasting 800 HP.",
+        "category": "SUV",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2022-10/image3_1.jpg?itok=CzoUejNu"
+     },
+     {
+        "name": "Lamborghini URUS - MANSORY VENATUS P820",
+        "price": 1300000,
+        "description": "The Lamborghini Urus Mansory Venatus P820 is a custom-tuned SUV boasting around 820 horsepower from its twin-turbo V8, with carbon fiber exterior elements and opulent interior touches, epitomizing luxury and performance",
+        "category": "SUV",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2022-12/Urus-GreyGlossy-23edit.jpg?itok=b3h4Q5bA"
+     },
+     {
+        "name": "Ferrari 812 GTS - MANSORY STALLONE Tempesta Nera - ONE OF ONE",
+        "price": 9900000,
+        "description": "The Ferrari 812 GTS Mansory Stallone Tempesta Nera is a unique and highly customized convertible supercar, featuring the exclusive One of One designation, combining exhilarating performance with bespoke design..",
+        "category": "SUPERCAR",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2022-11/01.jpg?itok=WknyH2kp"
+     },
+     {
+        "name": "Ferrari Roma - MANSORY Tempesta Verde - One of One",
+        "price": 8569000,
+        "description": "The Ferrari Roma Mansory Tempesta Verde One of One is a uniquely customized masterpiece, harmonizing the Roma's beauty with Mansory's artistry, making it truly exceptional.",
+        "category": "SUPERCAR",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2022-12/RomaNr.779-5.jpg?itok=LFqUvKNR"
+     },
+     {
+        "name": "Lamborghini Aventador - MANSORY Carbonado EVO",
+        "price": 1600000,
+        "description": "The Lamborghini Aventador Mansory Carbonado EVO is an exclusive, heavily customized supercar with a powerful V12 engine, showcasing a striking carbon fiber exterior and luxurious interior refinements..",
+        "category": "SUPERCAR",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-04/image1.jpg?itok=XIeveF0d"
+     },
+     {
+        "name": "Mercedes S Maybach 680 4MATIC",
+        "price": 1350000,
+        "description": "The Mercedes-Maybach S 680 4MATIC is a pinnacle of luxury and performance, combining opulent comfort with a potent V12 engine for an extraordinary driving experience..",
+        "category": "CLASS",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-07/1_0.jpg?itok=BtZpDY3o"
+     },
+     {
+        "name": "Bentley Flying Spur W12 / MANSORY / 740 HP / Carbon /RHD",
+        "price": 1490000,
+        "description": "The Bentley Flying Spur W12 Mansory offers 740 HP of refined power, featuring bespoke carbon elements, and is tailored for right-hand drive luxury performance.",
+        "category": "CLASS",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2022-10/MANSORY%20Bentley%20FS%2001.JPG?itok=z6QwBDIp"
+     },
+     {
+        "name": "Rolls-Royce Dawn - MANSORY Pulse Edition - White",
+        "price": 1990000,
+        "description": "The Rolls-Royce Dawn Mansory Pulse Edition in elegant white is a distinctive luxury convertible with Mansory's bespoke touches, embodying exclusivity and style..",
+        "category": "CLASS",
+        "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-04/Dawn%20White%20Nr.628-15%20copy.jpg?itok=fat6kF1e"
+     },
+     {
+      "name": "Mercedes S 580 4MATIC Limousine long version",
+      "price": 1380000,
+      "description": "The Mercedes S 580 4MATIC Limousine offers luxurious long version, combining advanced technology and opulent comfort.",
+      "category": "CLASS",
+      "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-06/background-Sale2600px%20copy.jpg?itok=rzWABGoE"
+   },
+   {
+      "name": "Rolls-Royce Dawn - MANSORY Pulse Edition",
+      "price": 2000000,
+      "description": "The Rolls-Royce Dawn Mansory Pulse Edition is a bespoke luxury convertible, showcasing exclusive design elements and personalized craftsmanship.",
+      "category": "CLASS",
+      "imageUrl": "https://www.mansory.com/sites/default/files/styles/1170_x_full_box_image/public/2023-04/Dawn%20TurcheseBlack%20Nr.867-5%20copy.jpg?itok=v1LYOGFS"
+   }
+
+]
