@@ -57,7 +57,7 @@ app.post('/api/user/add', (req, res) => {
 app.post('/api/login', (req, res) => {
     db.getUser(req.body.email).then((result) => {
         if (result) {
-            if (result.password) {
+            if (result.password===req.body.password) {
                 res.json("success")
             } else {
                 res.json("the password is incorrect")

@@ -49,7 +49,7 @@ export default function SignIn(props) {
 
             console.log(result.data,"the response");
             if(result.data==="success"){
-                props.chanV("HomeAdmin")
+                props.chanV("AdminHome")
                 props.setlogged(true)                  
             }else{
                 alert(result.data)
