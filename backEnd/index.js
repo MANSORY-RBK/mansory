@@ -49,15 +49,15 @@ app.put('/api/products/:_id', (req, res) => {
             res.status(500).json({ error: "Internal Server Error" });
         });
 });
-app.post('api/user/add', (req, res) => {
+app.post('/api/user/add', (req, res) => {
     db.addUSer(req.body).then((result) => {
         res.status(200).json(result)
     }).catch((err) => { res.status(200).json(err) })
 })
-app.post('api/login', (req, res) => {
+app.post('/api/login', (req, res) => {
     db.getUser(req.body.email).then((result) => {
         if (result) {
-            if (result.password) {
+            if (result.password===req.body.password) {
                 res.json("success")
             } else {
                 res.json("the password is incorrect")
