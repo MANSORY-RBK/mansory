@@ -103,13 +103,9 @@ const App = () => {
     <div className="app-nav">
       <span className="app-logo" src="" onClick={() => { switchView("Home"); setTrigger(!trigger); }}>MANSORY</span>
 
-      {view === "Home" && (
-        <div className="pp-search">
-          <Search search={search} />
-        </div>
-      )}
-
+      {view === "Home" && (<div className="pp-search"> <Search search={search} /> </div> )}
       {view === "Home" && <span className="app-items" onClick={toggleMenu}>CATEGORIES</span>}
+
       { view !=="AdminHome" &&view !=="Login"&& <span className="app-items" onClick={() => switchView("cart")}>CART</span>}
     </div>
     {menuOpen && <div className="app-menu">
@@ -125,6 +121,7 @@ const App = () => {
     {view==="UpdateProduct"&&  <UpdateProduct uprod={upProduct} />}
   </div>
 );
+
 
 };
 
