@@ -296,3 +296,25 @@
 .update-button:hover {
   background-color: #e3a700;
 }
+.logout:hover {
+ width: 100 px;
+  color: #C0392B;
+}
+.addbutton:hover{
+color: #C0392B;
+}
+.addbutton{
+  size: "500px";
+  width: "200px";
+  background-color: #525252;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex ;
+  font-size: 16px;
+  border-radius: 15px;
+ margin-left: 700px;
+ margin-top: 50px;
+}

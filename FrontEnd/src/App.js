@@ -9,9 +9,12 @@ import SignIn from './components/LoginAdmin';
 import React from 'react';
 import AdminHome from './components/AdminHome';
 import UpdateProduct from './components/Update';
+import LogoutIcon from '@mui/icons-material/Logout';
+
+import AddProduct from './components/AddProduct';
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [view, setView] = useState("Login");
+  const [view, setView] = useState("AddProduct");
   const [data, setData] = useState([]);
   const [USV, setUSV] = useState([]);
   const [SUPERCAR, setSUPERCAR] = useState([]);
@@ -71,6 +74,11 @@ const App = () => {
     setOneProduct(x);
     switchView("Details");
   };
+  const addproduct= (obj)=>{
+    axios.post("http://localhost:5000/api/products",obj).then((result) => { console.log(result); switchView("productList"); toggletrigger() }).catch((err) => {
+     console.log(err)})
+   
+   }
 /////////////////////////////////////////////CartDetails //////////////////////////////////
 
   const cartp = (x) => {
@@ -101,7 +109,14 @@ const App = () => {
  return (
   <div className="app-container">
     <div className="app-nav">
-      <span className="app-logo" src="" onClick={() => { switchView("Home"); setTrigger(!trigger); }}> 
+      <span className="app-logo" src="" onClick={() => { 
+        if(Logged){
+          setTrigger(!trigger)
+          switchView("AdminHome")
+        }else{
+          switchView("Home"); setTrigger(!trigger);
+        }
+         }}> 
             <div className="svg-container" style={{display:"inline"}}>
                  <svg
                         version="1.1"
@@ -154,7 +169,8 @@ const App = () => {
       {view === "Home" && (<div className="pp-search"> <Search search={search} /> </div> )}
       {view === "Home" && <span className="app-items" onClick={toggleMenu}>CATEGORIES</span>}
      {view === "Home" &&  <span className="app-logo" src="" onClick={() => { switchView("Login")}}>SIGN</span>}
-
+     {view==="AdminHome" && <LogoutIcon className="logout"  onClick={()=>{setLogged(false);switchView("Home")} }/> }
+    
       { view !=="AdminHome" &&view !=="Login"&& <span className="app-items" onClick={() => switchView("cart")}>CART</span>}
     </div>
     {menuOpen && <div className="app-menu">
@@ -167,7 +183,8 @@ const App = () => {
     {view === "Details" && <CarDetails product={oneProduct} cartp={cartp} />}
     {view==="Login" && <SignIn chanV={switchView} setlogged={setLogged}/>}
     {view==="AdminHome"&& Logged ===true &&<AdminHome  upProd={sUpdates} delete={deleteProd}  chanV={switchView} product ={data} /> }
-    {view==="UpdateProduct"&&  <UpdateProduct uprod={upProduct} />}
+    {view==="UpdateProduct"&&  <UpdateProduct uprod={upProduct}  />}
+    {view==="AddProduct" && <AddProduct addprod={addproduct} chanV={switchView}/>}
   </div>
 );
 
